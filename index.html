@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Urban Trends- One Stop Destination for everything </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="design.css" rel="stylesheet">
+        <script src="https://use.fontawesome.com/06c2cc2792.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+          
+    </head>
+    <body>
+    <nav>
+        <div >
+            <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="nav-links">
+            <div class="dialog">
+                <a href="#" >fashion</a>
+            </div>
+            <div class="dialog">
+                <a href="#" >electronics</a>
+            </div>
+            <div class="dialog">
+                <a href="#" >home and living</a>
+            </div>
+        </div>
+        <div class="nav-search">
+            <button><i class="fa fa-search" aria-hidden="true"></i></button><input type="text" placeholder="Search for products, brands and more">
+            
+        </div>
+        <div class="nav-icon">
+            
+            <a href="register.html" >
+                            <div class="dialog">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                    <h6>profile </h6>
+            </div>
+            </a>
+            <div>
+                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                <h6>wishlist</h6>
+            </div>
+            <a href="cart.html">
+            <div >
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                <h6> bag</h6>
+            </div></a>
+            
+        </div>
+    </nav>
+
+    <section id="slider">
+       
+         <div class="slideshow-container">
+            <div class="mySlides fade">       
+              <img src="images/offer-1.jpg" style="width:100%">              
+            </div> 
+            <div class="mySlides fade">
+              <img src="images/offer-2.jpg" style="width:100%"> 
+            </div>  
+            <div class="mySlides fade">
+              <img src="images/offer-3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/offer-4.jpg" style="width:100%">
+            </div>
+            
+        </div>
+
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 3000); // Change image every 2 seconds
+                }
+                </script>
+
+         <div class="row">
+            <div>
+                <img src="images/discount-1.jpg" alt="discount">
+            </div>
+            <div>
+                <img src="images/discount-2.jpg" alt="discount">
+            </div>
+            <div>
+                <img src="images/discount-3.jpg" alt="discount">
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="images/discount-4.jpg" alt="discount">
+            </div>
+            <div>
+                <img src="images/discount-5.jpg" alt="discount">
+            </div>
+            <div>
+                <img src="images/discount-6.jpg" alt="discount">
+            </div>
+        </div>
+    </section>
+    <section class="categories">
+        <h2>fashion</h2>
+            <div class="categories-row">
+                <div>
+                    <img src="images/best-1.png" alt="">
+                    <h4>Jeans</h4>
+                </div>
+                <div>
+                    <img src="images/best-2.png" alt="">
+                    <h4>shoes</h4>
+                </div>
+                <div>
+                    <img src="images/best-3.png" alt="">
+                    <h4>bags</h4>
+                </div>
+                <div>
+                    <img src="images/best-4.png" alt="">
+                    <h4>Watches</h4>
+                </div>
+            </div>
+            <div class="categories-row">
+                <div>
+                    <img src="images/best-5.png" alt="">
+                    <h4>shirts</h4>
+                </div>
+                <div>
+                    <img src="images/best-6.png" alt="">
+                    <h4>lowers</h4>
+                </div>
+                <div>
+                    <img src="images/best-7.png" alt="">
+                    <h4>jewellery</h4>
+                </div>
+                <div>
+                    <img src="images/best-8.png" alt="">
+                    <h4>tops</h4>
+                </div>
+            </div>
+            <div class="categories-row">
+                <div>
+                    <img src="images/best-9.png" alt="">
+                    <h4>sarees</h4>
+                </div>
+                <div>
+                    <img src="images/best-10.png" alt="">
+                    <h4>jeans</h4>
+                </div>
+                <div>
+                    <img src="images/best-11.png" alt="">
+                    <h4>dresses</h4>
+                </div>
+                <div>
+                    <img src="images/best-12.png" alt="">
+                    <h4>trousers</h4>
+                </div>
+            </div>
+    </section>
+    <section class="categories">
+        <h2>electronics</h2>
+        <div class="categories-row">
+            <div>
+                <img src="images/e1.png" alt="" class="box-2">
+                <a class="middle" href="#"><h4 >Chargers and adapters</h4></a>
+            </div>
+            <div>
+                <img src="images/e2.PNG" alt="" class="box-2"> 
+                <h4>camera and audio</h4>
+            </div>
+            <div>
+                <img src="images/e3.PNG" alt="" class="box-2">
+                <h4>car & vehical accessories</h4>
+            </div>
+        </div>
+        <div class="categories-row">
+            <div>
+                <img src="images/e4.png" alt="" class="box-2">
+                <h4>computers and accessories</h4>
+            </div>
+            <div>
+                <img src="images/e5.PNG" alt="" class="box-2"> 
+                <h4>headphones</h4>
+            </div>
+            <div>
+                <img src="images/e6.PNG" alt="" class="box-2">
+                <h4>home audio</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Home and living</h2>
+        <div class="categories-row">
+            <div>
+                <img src="images/h1.png" alt="" class="box-1">
+                <h4>Chargers and adapters</h4>
+            </div>
+            <div>
+                <img src="images/h2.PNG" alt="" class="box-1"> 
+                <h4>camera and audio</h4>
+            </div>
+            <div>
+                <img src="images/h3.PNG" alt="" class="box-1">
+                <h4>car & vehical accessories</h4>
+            </div>
+        </div>
+        <div class="categories-row">
+            <div>
+                <img src="images/h4.png" alt="" class="box-1" >
+                <h4>computers and accessories</h4>
+            </div>
+            <div>
+                <img src="images/h5.PNG" alt="" class="box-1"> 
+                <h4>headphones</h4>
+            </div>
+            <div>
+                <img src="images/h6.PNG" alt="" class="box-1">
+                <h4>home audio</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-links">
+                <h6>company</h6>
+                <ul>
+                    <li class="left">blog</li>
+                    <li class="left">invester</li>
+                    <li class="left">feedback</li>
+                    <li class="left">ads</li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h6>about</h6>
+                <ul>
+                    <li class="left">gift card</li>
+                    <li class="left">card balance inquiry</li>
+                    <li class="left">FAQ</li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h6>legal</h6>
+                <ul>
+                    <li class="left">disclaimer</li>
+                    <li class="left">terms & conditions</li>
+                    <li class="left">privacy policy</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h6>social media</h6>
+                <div class="social-link">
+                    <img src="images/fb.png" alt="">
+                    <img src="images/twitter.png" alt="">
+                    <img src="images/instagram.png" alt="">
+                    <img src="images/You_tube.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer-bottom">
+            all rights reserved.
+        </div>
+    </footer>
+        
+
+
+
+    </body>
+</html>
