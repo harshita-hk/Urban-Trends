@@ -274,12 +274,12 @@ input[type=text]{
     color: #FC427B;
     text-transform: capitalize;
     font-family: 'Playfair Display', serif;
-   transition: 2s all ease;
+   /* transition: 2s all ease; */
 }
-.categories h4:hover{
+/* .categories h4:hover{
     transform: scale(1.1);
 
-}
+} */
 .box-2 {
     border: 10px solid;
     border-image-source: linear-gradient(45deg, #70e1f5, #ffd194);
