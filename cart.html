@@ -28,9 +28,9 @@
                 text-align: center;
                 font-size: 35px;
                 font-family: 'Playfair Display', serif;
-                background: -webkit-linear-gradient(#43cea2, 
-                #185a9d);
-         
+                background: -webkit-linear-gradient(#200122, 
+                #6f0000);
+                opacity: 1;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-style: oblique;
@@ -41,7 +41,7 @@
               -ms-flex-wrap: wrap; /* IE10 */
               flex-wrap: wrap;
               margin: 20px -16px;
-              opacity: 0.7;
+              opacity: 0.8;
               
 
             }
@@ -62,7 +62,8 @@
               
             }
             ::placeholder{
-                font-family: "FontAwesome"
+                font-family: "FontAwesome";
+                font-size: 16px;
             }
             .col-25,
             .col-50,
@@ -75,9 +76,10 @@
               padding: 5px 20px 15px 20px;
               border: 1px solid lightgrey;
               border-radius: 3px;
-              background: #FBD3E9;  /* fallback for old browsers */
-               background: -webkit-linear-gradient(to top, #BB377D, #FBD3E9);  /* Chrome 10-25, Safari 5.1-6 */
-                background: linear-gradient(to top, #BB377D, #FBD3E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+              background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
             }
             
@@ -98,7 +100,9 @@
             }
             
             .btn {
-              background-color: #4CAF50;
+              background: #34e89e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0f3443, #34e89e);
               color: white;
               padding: 12px;
               margin: 10px 0;
@@ -110,21 +114,26 @@
             }
             
             .btn:hover {
-              background-color: #45a049;
+              background: #6190E8;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
             }
             
             a {
-              color:#3c40c6;
+              font-weight: 700;
+              color:black;
               text-decoration: none;
             }
             
             hr {
-              border: 1px solid lightgrey;
+              border: 2px solid grey;
             }
             
             span.price {
+              font-weight: 700;
               float: right;
-              color: #3c40c6;
+              color: black;
             }
         </style>   
     </head>
@@ -160,12 +169,12 @@
           
                     <div class="col-50">
                       <h3>Payment</h3>
-                      <label for="fname">Accepted Cards</label>
+                      <label for="fname" style="margin-left: 30px;font-weight: bold;">Accepted Cards</label>
                       <div class="icon-container">
-                        <i class="fa fa-cc-visa" style="color:navy;"></i>
-                        <i class="fa fa-cc-amex" style="color:blue;"></i>
-                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        <i class="fa fa-cc-visa" style="color:navy; margin-left: 10px;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;margin-left: 10px;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;margin-left: 10px;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;margin-left: 10px;"></i>
                       </div>
                       <!-- <label for="cname">Name on Card</label> -->
                       <input type="text" id="cname" name="cardname" placeholder=" &#xf283 &nbsp;&nbsp; Name on Card">
@@ -201,7 +210,7 @@
                 <p><a href="#">Product 3</a> <span class="price">&#x20B9; 200</span></p>
                 <p><a href="#">Product 4</a> <span class="price">&#x20B9; 200</span></p>
                 <hr>
-                <p>Total <span class="price" style="color:black"><b>&#x20B9; 800</b></span></p>
+                <p>Total <span class="price" style="color:black; font-weight: bold;"><b>&#x20B9; 800</b></span></p>
               </div>
             </div>
         </div>
